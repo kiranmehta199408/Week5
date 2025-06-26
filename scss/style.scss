@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex; // Use flexbox for horizontal alignment
+  justify-content: space-between; // Place items with space between them
+  align-items: center; // Vertically center the images
+  height: 100vh; // Make the container take up full viewport height
+  padding: 0 20px; // Optional: adds horizontal padding
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; // Center the image within the container
+  align-items: center; // Center the image vertically within its container
+  width: 150px; // Fixed size for image containers (same size for all images)
+}
+
+img {
+  width: 150px; // Image size
+  height: 150px; // Keep square aspect ratio for circular image
+  object-fit: cover; // Ensure image fits the circle without distortion
+  border-radius: 50%; // Make the image circular
+}
